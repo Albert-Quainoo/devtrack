@@ -35,3 +35,5 @@ Results will be recorded below after browser verification.
 - **Pass:** no captured browser console warning/error entries during these workflows.
 - **Limitation:** browser automation stalled while opening the native task deletion confirmation. Browser accept/cancel and cascading deletion remain on the manual checklist; cascade behavior passed the data test.
 - **Not yet exercised in browser:** blocked/full storage, cross-tab refresh, malicious-looking input, and complete keyboard-only navigation. Escaped rendering and storage failure behavior were reviewed in the source; this is not a full accessibility audit.
+
+- **Hosting verified:** GitHub Pages build succeeded. All five pages and three shared CSS/JS assets returned HTTP 200. Hosted Home/About/Projects navigation and project creation surviving refresh were checked in the browser.
