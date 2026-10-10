@@ -11,7 +11,3 @@ A project and task planner built with HTML, CSS, and JavaScript.
 Data is saved in this browser using localStorage. There is no account or cloud sync.
 
 **Run locally:** `python3 -m http.server 8000`, then open http://localhost:8000.
-
-**Tests:** `npm test` (requires Node.js).
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for hosting instructions.
