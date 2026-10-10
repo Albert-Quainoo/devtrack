@@ -1,2 +1,73 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="DevTrack: a focused developer project planner."><title>Tasks · DevTrack</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css"><script src="assets/store.js" defer></script><script src="assets/app.js" defer></script></head><body data-page="tasks"><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html"><span aria-hidden="true">⌘</span> DevTrack</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="projects.html">Projects</a><a href="tasks.html" aria-current="page">Tasks</a><a href="about.html">About</a></nav><span class="local-label">● LOCAL WORKSPACE</span></header><main id="main"><header class="page-heading"><div><p class="eyebrow">WORKSPACE / TASKS</p><h1>Small steps. Real progress.</h1><p>Turn your project into a manageable checklist.</p></div></header><section class="task-composer"><h2>Add a task</h2><form id="task-form"><label class="grow">Task name<input name="title" required maxlength="120" placeholder="What needs to get done?"></label><label>Project<select name="projectId" id="task-project" required></select></label><label>Priority<select name="priority"><option>Medium</option><option>High</option><option>Low</option></select></label><button class="button" type="submit">+ Add task</button></form><p id="task-error" class="error" role="alert"></p></section><div class="toolbar"><label>Project<select id="project-filter"><option value="all">All projects</option></select></label><label>Show<select id="task-filter"><option value="all">All tasks</option><option value="open">Open tasks</option><option value="done">Completed tasks</option></select></label></div><section id="task-list" aria-label="Tasks"></section></main><p id="notice" role="status" aria-live="polite"></p><footer><a class="brand" href="index.html">DevTrack</a><span>Built for the work ahead.</span><a href="about.html">About this project ↗</a></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DevTrack: a focused developer project planner.">
+<title>Tasks · DevTrack</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/store.js" defer>
+</script>
+<script src="assets/app.js" defer>
+</script>
+</head>
+<body data-page="tasks">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html">DevTrack</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="projects.html">Projects</a>
+<a href="tasks.html" aria-current="page">Tasks</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+<main id="main">
+<header class="page-heading">
+<div>
+<h1>Your tasks</h1>
+<p>Add tasks and track what is complete.</p>
+</div>
+</header>
+<section class="task-composer">
+<h2>Add a task</h2>
+<form id="task-form">
+<label class="grow">Task name<input name="title" required maxlength="120" placeholder="What needs to get done?">
+</label>
+<label>Project<select name="projectId" id="task-project" required>
+</select>
+</label>
+<label>Priority<select name="priority">
+<option>Medium</option>
+<option>High</option>
+<option>Low</option>
+</select>
+</label>
+<button class="button" type="submit">+ Add task</button>
+</form>
+<p id="task-error" class="error" role="alert"></p>
+</section>
+<div class="toolbar">
+<label>Project<select id="project-filter">
+<option value="all">All projects</option>
+</select>
+</label>
+<label>Show<select id="task-filter">
+<option value="all">All tasks</option>
+<option value="open">Open tasks</option>
+<option value="done">Completed tasks</option>
+</select>
+</label>
+</div>
+<section id="task-list" aria-label="Tasks"></section>
+</main>
+<p id="notice" role="status" aria-live="polite"></p>
+<footer>
+<a class="brand" href="index.html">DevTrack</a>
+<span>Project planner</span>
+<a href="about.html">About this project</a>
+</footer>
+</body>
+</html>

@@ -1,2 +1,82 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="DevTrack: a focused developer project planner."><title>Projects · DevTrack</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css"><script src="assets/store.js" defer></script><script src="assets/app.js" defer></script></head><body data-page="projects"><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html"><span aria-hidden="true">⌘</span> DevTrack</a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="projects.html" aria-current="page">Projects</a><a href="tasks.html">Tasks</a><a href="about.html">About</a></nav><span class="local-label">● LOCAL WORKSPACE</span></header><main id="main"><header class="page-heading"><div><p class="eyebrow">WORKSPACE / PROJECTS</p><h1>Your projects</h1><p>Keep every idea moving in the right direction.</p></div><button class="button" id="new-project">+ New project</button></header><div class="toolbar"><label>Search projects<input id="search" type="search" placeholder="Search by name or description"></label><label>Status<select id="status-filter"><option value="all">All statuses</option><option>Planned</option><option>Active</option><option>Completed</option></select></label></div><p id="result-count" class="muted"></p><section id="project-list"></section><dialog id="project-dialog"><form id="project-form"><div class="section-heading"><h2 id="form-title">New project</h2><button type="button" id="close-dialog" class="icon-button" aria-label="Close form">×</button></div><input type="hidden" name="id"><label>Project name<input name="name" required maxlength="80" placeholder="e.g. Portfolio website"></label><label>Description<textarea name="description" maxlength="400" rows="3" placeholder="What are you building?"></textarea></label><div class="form-grid"><label>Status<select name="status"><option>Planned</option><option>Active</option><option>Completed</option></select></label><label>Due date (optional)<input name="due" type="date"></label></div><p id="form-error" class="error" role="alert"></p><button class="button" type="submit">Save project</button></form></dialog></main><p id="notice" role="status" aria-live="polite"></p><footer><a class="brand" href="index.html">DevTrack</a><span>Built for the work ahead.</span><a href="about.html">About this project ↗</a></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DevTrack: a focused developer project planner.">
+<title>Projects · DevTrack</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/store.js" defer>
+</script>
+<script src="assets/app.js" defer>
+</script>
+</head>
+<body data-page="projects">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="index.html">DevTrack</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="projects.html" aria-current="page">Projects</a>
+<a href="tasks.html">Tasks</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+<main id="main">
+<header class="page-heading">
+<div>
+<h1>Your projects</h1>
+<p>Create and manage your projects.</p>
+</div>
+<button class="button" id="new-project">+ New project</button>
+</header>
+<div class="toolbar">
+<label>Search projects<input id="search" type="search" placeholder="Search by name or description">
+</label>
+<label>Status<select id="status-filter">
+<option value="all">All statuses</option>
+<option>Planned</option>
+<option>Active</option>
+<option>Completed</option>
+</select>
+</label>
+</div>
+<p id="result-count" class="muted"></p>
+<section id="project-list"></section>
+<dialog id="project-dialog">
+<form id="project-form">
+<div class="section-heading">
+<h2 id="form-title">New project</h2>
+<button type="button" id="close-dialog" class="icon-button" aria-label="Close form">×</button>
+</div>
+<input type="hidden" name="id">
+<label>Project name<input name="name" required maxlength="80" placeholder="e.g. Portfolio website">
+</label>
+<label>Description<textarea name="description" maxlength="400" rows="3" placeholder="What are you building?">
+</textarea>
+</label>
+<div class="form-grid">
+<label>Status<select name="status">
+<option>Planned</option>
+<option>Active</option>
+<option>Completed</option>
+</select>
+</label>
+<label>Due date (optional)<input name="due" type="date">
+</label>
+</div>
+<p id="form-error" class="error" role="alert"></p>
+<button class="button" type="submit">Save project</button>
+</form>
+</dialog>
+</main>
+<p id="notice" role="status" aria-live="polite"></p>
+<footer>
+<a class="brand" href="index.html">DevTrack</a>
+<span>Project planner</span>
+<a href="about.html">About this project</a>
+</footer>
+</body>
+</html>

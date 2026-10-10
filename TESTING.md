@@ -37,3 +37,7 @@ Results will be recorded below after browser verification.
 - **Not yet exercised in browser:** blocked/full storage, cross-tab refresh, malicious-looking input, and complete keyboard-only navigation. Escaped rendering and storage failure behavior were reviewed in the source; this is not a full accessibility audit.
 
 - **Hosting verified:** GitHub Pages build succeeded. All five pages and three shared CSS/JS assets returned HTTP 200. Hosted Home/About/Projects navigation and project creation surviving refresh were checked in the browser.
+
+## Layout revision
+
+The simplified light layout was checked on desktop and at 390px phone width, with no horizontal overflow. Project creation, task creation/completion, and dashboard updates were checked again in the browser. All five data test groups still pass.
